@@ -8,3 +8,8 @@ libnotify
 rofi
 dolphin
 wireplumber
+pavucontrol
+power-profiles-daemon
+otf-font-awesome
+ttf-firacode-nerd
+ttf-jetbrains-mono-nerd

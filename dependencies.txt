@@ -1,0 +1,10 @@
+hyprland
+hyprpaper
+hyprlock
+waybar
+alacritty
+swaync
+libnotify
+rofi
+dolphin
+wireplumber

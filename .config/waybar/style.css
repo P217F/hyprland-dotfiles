@@ -48,71 +48,33 @@ window#waybar {
 #tray,
 #group-hardware,
 #power-profiles-daemon,
-#menulogout {
+#custom-menulogout,
+#custom-notification,
+#custom-system,
+#cpu,
+#memory,
+#disk {
   padding: 0 12px;
   margin: 0 6px;
   border-radius: 6px;
   transition: all 0.2s ease;
 }
 
-#clock {
-  color: #d79921;
-}
+#clock { color: #d79921; }
+#network { color: #458588; }
+#network.disconnected { color: #cc241d; }
+#pulseaudio { color: #b16286; }
+#pulseaudio.muted { color: #928374; }
+#battery.charging { color: #98971a; }
+#battery.warning { color: #d79921; }
+#battery.critical { color: #cc241d; }
+#power-profiles-daemon { color: #fabd2f; }
+#group-hardware { background: rgba(40, 40, 40, 0.6); border-radius: 6px; }
+#custom-menulogout { color: #fb4934; }
 
-#network {
-  color: #458588;
-}
+#tray { padding-right: 10px; }
 
-#network.disconnected {
-  color: #cc241d;
-}
-
-#pulseaudio {
-  color: #b16286;
-}
-
-#pulseaudio.muted {
-  color: #928374;
-}
-
-#battery.charging {
-  color: #98971a;
-}
-
-#battery.warning {
-  color: #d79921;
-}
-
-#battery.critical {
-  color: #cc241d;
-}
-
-#clock:hover,
-#network:hover,
-#pulseaudio:hover,
-#battery:hover,
-#group-hardware:hover,
-#power-profiles-daemon:hover,
-#menulogout:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-#tray {
-  padding-right: 10px;
-}
-
-#menulogout {
-  color: #fb4934;
-}
-
-#power-profiles-daemon {
-  color: #fabd2f;
-}
-
-#group-hardware {
-  background: rgba(40, 40, 40, 0.6);
-  border-radius: 6px;
-}
+#custom-sep { color: #666; padding: 0 8px; }
 
 #custom-system,
 #cpu,
@@ -123,6 +85,34 @@ window#waybar {
   color: #bdae93;
 }
 
+#clock:hover,
+#network:hover,
+#pulseaudio:hover,
+#battery:hover,
+#group-hardware:hover,
+#power-profiles-daemon:hover,
+#custom-menulogout:hover,
+#custom-notification:hover,
+#custom-system:hover,
+#cpu:hover,
+#memory:hover,
+#disk:hover,
+#clock:hover *,
+#network:hover *,
+#pulseaudio:hover *,
+#battery:hover *,
+#group-hardware:hover *,
+#power-profiles-daemon:hover *,
+#custom-menulogout:hover *,
+#custom-notification:hover *,
+#custom-system:hover *,
+#cpu:hover *,
+#memory:hover *,
+#disk:hover * {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ebdbb2;
+}
+
 #group-hardware button:hover,
 #custom-system:hover,
 #cpu:hover,
@@ -130,9 +120,4 @@ window#waybar {
 #disk:hover {
   background: rgba(255,255,255,0.08);
   color: #ebdbb2;
-}
-
-#custom-sep {
-  color: #666;
-  padding: 0 8px;
 }

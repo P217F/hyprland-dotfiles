@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 25,
+  "height": 30,
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
   "modules-right": ["tray", "network", "pulseaudio", "battery", "power-profiles-daemon", "group/hardware", "custom/notification", "custom/menulogout"],
@@ -72,7 +72,7 @@
   },
 
   "custom/system": {
-    "format": "",
+    "format": "  ",
     "tooltip": false
   },
   "cpu": {
@@ -113,7 +113,7 @@
   },
 
   "custom/menulogout": {
-    "format": "   ",
+    "format": " ",
     "on-click": "wlogout",
     "on-click-right": "hyprlock",
     "tooltip-format": "Left: Power menu\nRight: Lock screen"
@@ -122,15 +122,15 @@
     "tooltip-format": "Left: Notifications\nRight: Do not disturb",
     "format": "{icon}",
     "format-icons": {
-      "notification": " 🔔",
-      // "none": " 🔕 ",
-      "none": "  🔔  ",
-      "dnd-notification": " 🔔 ",
-      "dnd-none": "  🔕  ",
+      "notification": "🔔",
+      // "none": "🔕",
+      "none": "🔔",
+      "dnd-notification": "🔔",
+      "dnd-none": "🔕",
       "inhibited-notification": "⚠️",
       "inhibited-none": "⚠️",
-      "dnd-inhibited-notification": " 🚫 ",
-      "dnd-inhibited-none": " 🚫 "
+      "dnd-inhibited-notification": "🚫",
+      "dnd-inhibited-none": "🚫"
     },
     "return-type": "json",
     "exec-if": "which swaync-client",

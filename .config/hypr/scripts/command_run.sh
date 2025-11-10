@@ -1,3 +1,4 @@
 #!/usr/bin/sh
 
-rofi -show run
+killall rofi;
+rofi -show run;

@@ -26,7 +26,7 @@
   "clock": {
     "format": "{:%H:%M %a}",
     "timezone": "",
-    "tooltip": true
+    "tooltip": false
   },
 
   "network": {
@@ -116,7 +116,7 @@
     "format": "",
     "on-click": "wlogout",
     "on-click-right": "hyprlock",
-    "tooltip-format": "Left: Power menu\nRight: Lock screen"
+    "tooltip-format": "Left: Wlogout\nRight: Lockscreen"
   },
   "custom/notification": {
     "tooltip-format": "Left: Notifications\nRight: Do not disturb",

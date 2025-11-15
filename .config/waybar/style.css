@@ -1,44 +1,51 @@
 * {
-  font-family: 
-    "JetBrainsMono Nerd Font",
-    "FiraCode Nerd Font",
-    "Noto Sans Mono",
-    "Fira Sans Semibold",
-    "Font Awesome 7 Free",
-    "Font Awesome 7 Brands",
-    "Font Awesome 6 Free",
-    "Font Awesome 6 Brands",
-    "FontAwesome",
-    "Material Icons",
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif;
-  font-size: 13px;
-  color: #ebdbb2;
+    font-family: 
+        "JetBrainsMono Nerd Font",
+        "FiraCode Nerd Font",
+        "Noto Sans Mono",
+        "Fira Sans Semibold",
+        "Font Awesome 7 Free",
+        "Font Awesome 7 Brands",
+        "Font Awesome 6 Free",
+        "Font Awesome 6 Brands",
+        "FontAwesome",
+        "Material Icons",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-size: 13px;
+    color: #ebdbb2;
 }
 
 window#waybar {
-  background: rgba(29, 32, 33, 0.85);
-  border-bottom: 2px solid #3c3836;
+    background: rgba(29, 32, 33, 0.85);
 }
 
 #workspaces button {
-  padding: 0 8px;
-  margin: 0 4px;
-  color: #d5c4a1;
-  border-radius: 6px;
-  transition: all 0.2s ease;
+    padding: 0 8px;
+    margin: 0 4px;
+    color: #d5c4a1;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: #1d2021;
 }
 
 #workspaces button.active {
-  background: #3c3836;
-  color: #fabd2f;
+    background: #3c3836;
+    color: #fabd2f;
 }
 
-#workspaces button:hover {
-  background: rgba(60, 56, 54, 0.6);
-  color: #fbf1c7;
+#workspaces button:hover,
+#workspaces button:focus,
+#workspaces button:active {
+    background: #504945;
+    color: #ebdbb2;
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
 
 #clock,
@@ -54,35 +61,73 @@ window#waybar {
 #cpu,
 #memory,
 #disk {
-  padding: 0 12px;
-  margin: 0 6px;
-  border-radius: 6px;
-  transition: all 0.2s ease;
+    padding: 0 12px;
+    margin: 0 6px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
 }
 
-#clock { color: #d79921; }
-#network { color: #458588; }
-#network.disconnected { color: #cc241d; }
-#pulseaudio { color: #b16286; }
-#pulseaudio.muted { color: #928374; }
-#battery.charging { color: #98971a; }
-#battery.warning { color: #d79921; }
-#battery.critical { color: #cc241d; }
-#power-profiles-daemon { color: #fabd2f; }
-#group-hardware { background: rgba(40, 40, 40, 0.6); border-radius: 6px; }
-#custom-menulogout { color: #fb4934; }
+#clock {
+    color: #d79921;
+}
 
-#tray { padding-right: 10px; }
+#network {
+    color: #458588;
+}
 
-#custom-sep { color: #666; padding: 0 8px; }
+#network.disconnected {
+    color: #cc241d;
+}
+
+#pulseaudio {
+    color: #b16286;
+}
+
+#pulseaudio.muted {
+    color: #928374;
+}
+
+#battery.charging {
+    color: #98971a;
+}
+
+#battery.warning {
+    color: #d79921;
+}
+
+#battery.critical {
+    color: #cc241d;
+}
+
+#power-profiles-daemon {
+    color: #fabd2f;
+}
+
+#group-hardware {
+    background: rgba(40, 40, 40, 0.6);
+    border-radius: 6px;
+}
+
+#custom-menulogout {
+    color: #fb4934;
+}
+
+#tray {
+    padding-right: 10px;
+}
+
+#custom-sep {
+    color: #666;
+    padding: 0 8px;
+}
 
 #custom-system,
 #cpu,
 #memory,
 #disk {
-  margin: 0 4px;
-  padding: 0 6px;
-  color: #bdae93;
+    margin: 0 4px;
+    padding: 0 6px;
+    color: #bdae93;
 }
 
 #clock:hover,
@@ -109,8 +154,8 @@ window#waybar {
 #cpu:hover *,
 #memory:hover *,
 #disk:hover * {
-  background: rgba(255, 255, 255, 0.1);
-  color: #ebdbb2;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ebdbb2;
 }
 
 #group-hardware button:hover,
@@ -118,6 +163,6 @@ window#waybar {
 #cpu:hover,
 #memory:hover,
 #disk:hover {
-  background: rgba(255,255,255,0.08);
-  color: #ebdbb2;
+    background: rgba(255, 255, 255, 0.08);
+    color: #ebdbb2;
 }

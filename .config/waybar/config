@@ -24,9 +24,10 @@
   },
 
   "clock": {
-    "format": "{:%H:%M %a}",
+    "format": "{:%H:%M %a %d/%m/%Y}",
     "timezone": "",
-    "tooltip": false
+    "tooltip": true,
+    "tooltip-format": "{:%A, %d %B %Y %H:%M}"
   },
 
   "network": {
@@ -72,14 +73,14 @@
   },
 
   "custom/system": {
-    "format": "  ",
+    "format": " ",
     "tooltip": false
   },
   "cpu": {
-    "format": "/ C {usage}%"
+    "format": "C {usage}%"
   },
   "memory": {
-    "format": "/ M {}%"
+    "format": "M {}%"
   },
   "disk": {
     "interval": 30,
@@ -89,7 +90,7 @@
   "group/hardware": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 300,
+      "transition-duration": 250,
       "children-class": "not-memory",
       "transition-left-to-right": false
     },
@@ -139,5 +140,4 @@
     "on-click-right": "swaync-client -d -sw",
     "escape": true
   }
-
 }

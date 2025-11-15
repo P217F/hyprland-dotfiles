@@ -24,6 +24,7 @@ otf-font-awesome
 pavucontrol
 power-profiles-daemon
 python
+python-gobject
 python-pip
 radeontop
 rofi

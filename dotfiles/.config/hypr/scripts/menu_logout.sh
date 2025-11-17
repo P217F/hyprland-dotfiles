@@ -1,3 +1,4 @@
 #!/usr/bin/sh
 
-wlogout
+killall wlogout;
+wlogout;

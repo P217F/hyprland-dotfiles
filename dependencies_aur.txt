@@ -1,2 +1,3 @@
+bibata-cursor-theme
 ttf-gabarito-git
 wlogout

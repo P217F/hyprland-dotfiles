@@ -1,4 +1,3 @@
-7zip
 alacritty
 dolphin
 fcitx5
@@ -7,7 +6,6 @@ fcitx5-gtk
 fcitx5-qt
 firefox
 gcc
-gdb
 git
 hyprland
 hyprlock
@@ -24,10 +22,7 @@ noto-fonts-emoji
 otf-font-awesome
 pavucontrol
 power-profiles-daemon
-python
 python-gobject
-python-pip
-radeontop
 rofi
 swaync
 ttf-fira-code
@@ -39,12 +34,9 @@ ttf-jetbrains-mono-nerd
 ttf-liberation
 ttf-material-icons
 ttf-roboto
-unzip
 waybar
 wireplumber
 wl-clipboard
 xorg-xwayland
 xdg-desktop-portal
 xdg-desktop-portal-gtk
-zip
-zsh

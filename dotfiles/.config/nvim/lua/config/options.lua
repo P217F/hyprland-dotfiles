@@ -40,7 +40,6 @@ vim.api.nvim_create_autocmd("BufWritePost", {
     if vim.bo.modified then
       write_failed = true
     end
-
     if not write_failed then
       vim.notify("✅ Saved: " .. args.file)
     else

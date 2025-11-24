@@ -1,6 +1,7 @@
 return {
   "smjonas/inc-rename.nvim",
   event = "VeryLazy",
+
   opts = {
     cmd_name = "IncRename",
     hl_group = "Substitute",
@@ -10,6 +11,7 @@ return {
     input_buffer_type = nil,
     post_hook = nil,
   },
+
   config = function(_, opts)
     require("inc_rename").setup(opts)
 
@@ -19,5 +21,9 @@ return {
         vim.notify("✅ Renamed symbol to: " .. ev.data.newName, vim.log.levels.INFO)
       end,
     })
+
+    vim.keymap.set("n", "<F7>", function()
+      return ":IncRename " .. vim.fn.expand("<cword>")
+    end, { expr = true })
   end,
 }

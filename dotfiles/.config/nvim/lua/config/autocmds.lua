@@ -10,4 +10,3 @@ end
 vim.api.nvim_create_autocmd("ColorScheme", { pattern="*", callback=set_transparent })
 vim.api.nvim_create_autocmd("VimEnter", { callback=set_transparent })
 set_transparent()
-

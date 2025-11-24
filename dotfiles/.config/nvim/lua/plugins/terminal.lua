@@ -5,7 +5,7 @@ return {
   config = function()
     require("toggleterm").setup{
       size = 18,
-      open_mapping = [[<F9>]],
+      open_mapping = [[;t]],
       hide_numbers = true,
       shade_filetypes = {},
       shade_terminals = true,

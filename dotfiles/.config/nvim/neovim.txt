@@ -1,0 +1,41 @@
+Notes: Config dotfiles at https://github.com/P217F/neovim-for-work.git
+
+Keymaps set in normal mode:
+F1: open telescope find_files
+F2: open telescope live_grep
+F3: open telescope oldfiles
+F4: open nvimtree
+F5: split
+F6: vertical split
+F7: open inc-rename
+F8: open aerial
+F9: open nvim-dap
+F10: step over
+F11: step in
+F12: step out
+<C-Left>, <C-Right>, <C-Up>, <C-Down>: resize buffer(when split)
+<C-h>, <C-j>, <C-k>, <C-l>: change buffer(when split)
+<C-z>, <C-y>: undo, redo
+q: quit
+qq: force quit no save
+;t: open terminal
+<M-m>: comment with lsp
+<S-f>: format code
+<leader>g: Preview hunk inline
+gn,gp: next hunk, previous hunk
+<M-a>, <M-d>, <M-h>, <M-n>, <M-p>: add_files_mark, remove_files_mark, toggle_quick_menu, next_files_mark, previous_files_mark
+<leader>b, <leader>t: set and remove breakpoints, terminate nvim-dap
+]f: jump to head of next function
+]c: jump to head of next class
+[f: jump to head of previous function
+[c: jump to head of previous class
+>a: swap with next parameter
+<a: swap with previous parameter
+
+Keymaps set in visual mode:
+af: select all function
+if: select inner function
+ac: select all class
+ic: select inner class
+ab: select all block
+ib: select inner block

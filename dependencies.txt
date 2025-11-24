@@ -10,6 +10,7 @@ git
 hyprland
 hyprlock
 hyprpaper
+kvantum
 libnotify
 ly
 neovim
@@ -23,6 +24,8 @@ otf-font-awesome
 pavucontrol
 power-profiles-daemon
 python-gobject
+qt5ct
+qt6ct
 rofi
 swaync
 ttf-fira-code

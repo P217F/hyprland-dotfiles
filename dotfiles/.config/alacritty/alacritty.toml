@@ -28,7 +28,7 @@ live_config_reload = true
 
 [font]
 normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
-size = 12.0
+size = 11.2
 
 [window]
 opacity = 0.7

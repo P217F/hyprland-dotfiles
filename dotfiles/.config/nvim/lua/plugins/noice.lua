@@ -9,7 +9,7 @@ return {
 				event = "notify",
 				find = "No information available",
 			},
-			opts = { skip = true, zindex = 200 },
+			opts = { skip = true },
 		})
 
 		local focused = true
@@ -31,13 +31,13 @@ return {
 				end,
 			},
 			view = "notify_send",
-			opts = { stop = false, zindex = 200 },
+			opts = { stop = false },
 		})
 
 		opts.commands = {
 			all = {
 				view = "split",
-				opts = { enter = true, format = "details", zindex = 200 },
+				opts = { enter = true, format = "details" },
 				filter = {},
 			},
 		}

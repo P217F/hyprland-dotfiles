@@ -25,6 +25,7 @@ qq: force quit no save
 gn,gp: next hunk, previous hunk
 <M-a>, <M-d>, <M-h>, <M-n>, <M-p>: add_files_mark, remove_files_mark, toggle_quick_menu, next_files_mark, previous_files_mark
 <leader>b, <leader>t: set and remove breakpoints, terminate nvim-dap
+<leader>: show keymap list
 ]f: jump to head of next function
 ]c: jump to head of next class
 [f: jump to head of previous function

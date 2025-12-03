@@ -12,37 +12,35 @@ return {
       vim.fn.sign_define('DapStopped',            { text = '→', texthl = 'DiagnosticInfo', linehl = 'Visual' })
       vim.fn.sign_define('DapLogPoint',           { text = '◆', texthl = 'DiagnosticHint' })
 
-      dap.adapters.cppdbg = {
-        id = 'cppdbg',
-        type = 'executable',
-        command = 'OpenDebugAD7',
+      dap.adapters.codelldb = {
+        type = 'server',
+        port = "${port}",
+        executable = {
+        command = 'codelldb',
+          args = {"--port", "${port}"},
+        }
       }
 
       dap.configurations.cpp = {
         {
           name = "Launch file",
-          type = "cppdbg",
+          type = "codelldb",
           request = "launch",
           program = function()
             return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
           end,
           cwd = '${workspaceFolder}',
-          stopAtEntry = true,
-          setupCommands = {
-            {
-              text = '-enable-pretty-printing',
-              description = 'enable pretty printing',
-              ignoreFailures = false
-            },
-          },
+          stopOnEntry = false,
+          args = {},
         },
       }
+
       dap.configurations.c = dap.configurations.cpp
 
       dap.adapters.python = {
-        type = 'executable',
-        command = 'python',
-        args = { '-m', 'debugpy.adapter' },
+          type = 'executable',
+          command = 'python',
+          args = { '-m', 'debugpy.adapter' },
       }
 
       dap.configurations.python = {
@@ -74,7 +72,6 @@ return {
       end, { desc = "DAP: start/continue" })
     end
   },
-
   {
     "rcarriga/nvim-dap-ui",
     lazy = true,

@@ -1,7 +1,7 @@
 return {
   "hrsh7th/nvim-cmp",
-  -- event = "InsertEnter",
   lazy = false,
+  event = "VeryLazy",
   dependencies = {
     "L3MON4D3/LuaSnip",
     "hrsh7th/cmp-buffer",
@@ -68,8 +68,8 @@ return {
     cmp.setup.cmdline(':', {
       mapping = cmp.mapping.preset.cmdline(),
       sources = {
-        { name = 'path' },    -- file paths
-        { name = 'cmdline' }, -- vim commands
+        { name = 'path' },
+        { name = 'cmdline' },
       }
     })
 
@@ -77,7 +77,7 @@ return {
     cmp.setup.cmdline({'/', '?'}, {
       mapping = cmp.mapping.preset.cmdline(),
       sources = {
-        { name = 'buffer' }, -- search in current buffer
+        { name = 'buffer' },
       }
     })
   end,

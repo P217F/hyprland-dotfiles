@@ -44,7 +44,7 @@ return {
       "package.json", "yarn.lock", "pnpm-lock.yaml", "tsconfig.json",
       "pyproject.toml", "requirements.txt", "setup.py", "Pipfile",
       "Cargo.toml", "go.mod",
-      "Makefile", "CMakeLists.txt",
+      "Makefile", "makefile", "CMakeLists.txt", "meson.build",
       "init.lua", "lua",
       ".env", ".env.local", ".nvim.lua", "README.md",
     }

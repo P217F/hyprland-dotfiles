@@ -8,7 +8,7 @@ M.setup = function(on_attach, capabilities)
     on_attach = on_attach,
 
     root_dir = function(fname)
-      local found = vim.fs.find({ "pyrightconfig.json", ".git" }, { upward = true, path = fname })
+      local found = vim.fs.find({ "pyrightconfig.json", ".git", "pyproject.toml", "setup.py" }, { upward = true, path = fname })
       if #found > 0 then
         return vim.fs.dirname(found[1])
       end

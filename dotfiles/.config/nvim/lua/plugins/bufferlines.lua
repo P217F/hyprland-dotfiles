@@ -3,12 +3,22 @@ return {
   version = "*",
   event = "VeryLazy",
   config = function()
+    local colors = {
+      bg     = "#282828",
+      fg     = "#ebdbb2",
+      grey   = "#3c3836",
+      blue   = "#458588",
+      green  = "#98971a",
+      yellow = "#d79921",
+      red    = "#cc241d",
+    }
+
     require("bufferline").setup {
       options = {
         mode = "buffers",
         numbers = "none",
         diagnostics = "nvim_lsp",
-        diagnostics_indicator = function(count, level, diagnostics_dict, context)
+        diagnostics_indicator = function(count, level)
           local icon = level:match("error") and " " or " "
           return " " .. icon .. count
         end,
@@ -27,17 +37,30 @@ return {
             highlight = "Directory",
             separator = true
           }
-        }
+        },
+        highlights = {
+          fill = { bg = colors.bg, fg = colors.fg },
+          background = { bg = colors.bg, fg = colors.fg },
+          buffer_selected = { bg = colors.grey, fg = colors.fg, bold = true },
+          buffer_visible = { bg = colors.bg, fg = colors.fg },
+          buffer = { bg = colors.bg, fg = colors.fg },
+          close_button = { bg = colors.bg, fg = colors.fg },
+          close_button_visible = { bg = colors.bg, fg = colors.fg },
+          close_button_selected = { bg = colors.grey, fg = colors.fg },
+          tab_selected = { bg = colors.grey, fg = colors.fg },
+          tab = { bg = colors.bg, fg = colors.fg },
+          tab_close = { bg = colors.bg, fg = colors.fg },
+          separator = { bg = colors.bg, fg = colors.bg },
+          separator_selected = { bg = colors.grey, fg = colors.grey },
+          separator_visible = { bg = colors.bg, fg = colors.bg },
+          indicator_selected = { bg = colors.grey, fg = colors.green },
+        },
       }
     }
-    
+
     vim.keymap.set("n", "<Tab>", "<cmd>BufferLineCycleNext<CR>", { silent = true, noremap = true })
     vim.keymap.set("n", "<S-Tab>", "<cmd>BufferLineCyclePrev<CR>", { silent = true, noremap = true })
     vim.keymap.set("n", "bd", "<cmd>bdelete<CR>", { silent = true, noremap = true })
     vim.keymap.set("n", "bdd", "<cmd>bdelete!<CR>", { silent = true, noremap = true })
-    for i = 1, 9 do
-        vim.keymap.set("n", "<leader>" .. i, "<cmd>BufferLineGoToBuffer " .. i .. "<CR>")
-    end
   end,
 }
-

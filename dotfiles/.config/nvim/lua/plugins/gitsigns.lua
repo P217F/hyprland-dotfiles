@@ -39,6 +39,6 @@ return {
       gitsigns.preview_hunk_inline()
     end, desc("Previous hunk inline preview"))
 
-    map("n", "<leader>g", gitsigns.preview_hunk_inline, desc("Preview hunk inline"))
+    map("n", ";g", gitsigns.preview_hunk_inline, desc("Preview hunk inline"))
   end,
 }

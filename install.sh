@@ -72,5 +72,11 @@ else
     echo "dotfiles/ly directory missing."
 fi
 
-# ---- 7. Done ----
+# ---- 8. Enable ly-dm ----
+sudo systemctl disable --now sddm;
+sudo systemctl disable --now gdm3;
+sudo systemctl disable --now lightdm;
+sudo systemctl enable ly;
+
+# ---- 8. Done ----
 printf "\033[1;32mDone\033[0m\n"

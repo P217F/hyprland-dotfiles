@@ -4,7 +4,8 @@ return {
   dependencies = {
     "nvim-treesitter/nvim-treesitter-textobjects",
   },
-  event = { "BufReadPost", "BufNewFile" },
+  -- event = { "BufReadPost", "BufNewFile" },
+  lazy = false,
   config = function()
     require('nvim-treesitter.configs').setup {
       ensure_installed = { "python" },

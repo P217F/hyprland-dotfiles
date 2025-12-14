@@ -1,9 +1,10 @@
-alacritty
+kitty
 dolphin
 fcitx5
 fcitx5-configtool
 fcitx5-gtk
 fcitx5-qt
+fcitx5-unikey
 firefox
 git
 hyprland
@@ -11,7 +12,6 @@ hyprlock
 hyprpaper
 kvantum
 libnotify
-ly
 neovim
 noto-fonts
 noto-fonts-cjk
@@ -38,4 +38,5 @@ wireplumber
 wl-clipboard
 xorg-xwayland
 xdg-desktop-portal
+xdg-desktop-portal-hyprland
 xdg-desktop-portal-gtk

@@ -19,7 +19,7 @@ vim.opt.timeoutlen = 400
 vim.opt.updatetime = 160
 vim.opt.mouse = "a"
 vim.opt.clipboard = "unnamedplus"
-vim.opt.fillchars = { eob=" " }
+vim.opt.fillchars = { eob="~" }
 vim.opt.shortmess:append("sI")
 vim.opt.whichwrap:append("<,>,[,],h,l")
 vim.opt.laststatus = 3

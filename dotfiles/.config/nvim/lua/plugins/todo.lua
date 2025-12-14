@@ -27,7 +27,7 @@ return {
           after = "fg",
           pattern = [[.*<(KEYWORDS)\s*:]],
           comments_only = true,
-          max_line_len = 400,
+          max_line_len = 500,
         },
         colors = {
           error   = { "#FB4934" },

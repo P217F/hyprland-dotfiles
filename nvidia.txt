@@ -1,3 +1,10 @@
-nvidia
+linux-firmware-nvidia
+nvidia-open
 nvidia-settings
 nvidia-utils
+nvidia-prime
+libva-nvidia-driver
+nvtop
+egl-wayland
+egl-wayland2
+egl-gbm
